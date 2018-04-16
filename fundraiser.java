@@ -16,23 +16,25 @@ public class fundraiser
         number = 0;
         money = num;
         fund(money);
+        System.out.println(number);
     }
     
     public void fund(int money)
     {
         if (money <=1)
         {
-            number += 1;
             return;
         }
         
         else
         {
-            //System.out.println(number)
+            
             for (int i = 0; i < 10; i++)
             {    
-                System.out.println(money);
+                //System.out.println(money);
                 fund(money/10);
+                number += 1;
+                System.out.println(number);
             }
         }
     }
