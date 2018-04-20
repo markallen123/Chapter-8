@@ -12,18 +12,18 @@ public class Palindrome
     public Palindrome(String word)
     {
         method(word);
-        count = 
+        count = 0;
     }
     
     public void method(String a)
     {
         if ((a.length()-1) <= 0)
         {
-            System.out.println("Done")
+            System.out.println("Done");
         }
         else
         {
-            
+            return;
         }
         
     }

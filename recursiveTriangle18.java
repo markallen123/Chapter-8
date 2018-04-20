@@ -42,7 +42,7 @@ public class recursiveTriangle18 extends JApplet
    public void Triangle(int[] xPos, int[] yPos, Graphics page)
    {
 	   //Find the distance between 2 points ex. - x,y & x1,y1
-
+	   
 
 		//if the segment/distance is 300 or so, good length to stop
 		//{
