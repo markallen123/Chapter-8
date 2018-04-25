@@ -54,13 +54,19 @@ public class recursiveTriangle18 extends JApplet
         {
             int[] xMid = new int[3];
             int[] yMid = new int[3];
-            xMid[0] = (xPos[1]+(xPos[0]-xPos[1]/2));
-            xMid[1] = (xPos[2]+(xPos[1]-xPos[2]/2));
-            xMid[2] = (xPos[3]+(xPos[2]-xPos[3]/2));
             
-            yMid[0] = (yPos[1]+(yPos[0]-yPos[1]/2));
-            yMid[1] = (xPos[2]+(yPos[1]-yPos[2]/2));
-            yMid[2] = (xPos[3]+(yPos[2]-yPos[3]/2));
+            xMid[0] = (xPos[1]+(xPos[0]-xPos[1])/2);
+            xMid[1] = (xPos[2]+(xPos[1]-xPos[2])/2);
+            xMid[2] = (xPos[3]+(xPos[2]-xPos[3])/2);
+            
+            yMid[0] = (yPos[1]+(yPos[0]-yPos[1])/2);
+            yMid[1] = (yPos[2]+(yPos[1]-yPos[2])/2);
+            yMid[2] = (yPos[3]+(yPos[2]-yPos[3])/2);
+            
+            page.drawLine(xMid[0],yMid[0],xMid[1],yMid[1]);
+            page.drawLine(xMid[1],yMid[1],xMid[2],yMid[2]);
+            page.drawLine(xMid[2],yMid[2],xMid[0],yMid[0]);
+            
             
             
         }
